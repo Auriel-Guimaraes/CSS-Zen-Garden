@@ -1,0 +1,59 @@
+:root {
+    --cor-fundo: #f5f5f5; /* Bege claro */
+    --cor-fonte: #4a4a4a; /* Cinza escuro */
+    --cor-destaque: #d28a7c; /* Coral suave */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor-destaque);
+    font-weight: normal;
+}
+
+a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b06b60; /* Um tom de coral mais escuro */
+}
+
+button {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b06b60; /* Tom mais escuro para hover */
+}
+
+.highlight {
+    background-color: var(--cor-destaque);
+    padding: 5px;
+    border-radius: 3px;
+    color: var(--cor-fundo);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
