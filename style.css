@@ -1,21 +1,49 @@
 :root {
-    --cor-fundo: #f5f5f5; /* Bege claro */
+    --cor-fundo-primaria: #f5f5f5; /* Bege claro */
     --cor-fonte: #4a4a4a; /* Cinza escuro */
     --cor-destaque: #d28a7c; /* Coral suave */
 }
 
 body {
-    background-color: var(--cor-fundo);
+    width: 1000px; /* Tamanho fixo da página */
+    margin: 0 auto;
+    background-color: var(--cor-fundo-primaria);
     color: var(--cor-fonte);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: sans-serif; /* Fonte do tipo sans-serif */
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--cor-destaque);
-    font-weight: normal;
+h1, h2, h3 {
+    text-align: center; /* Alinhamento central para todos os títulos */
+    color: var(--cor-destaque); /* Cor dos títulos usando cor de destaque */
+}
+
+h1 {
+    font-size: 1.8rem; /* Tamanho do h1 */
+}
+
+h2 {
+    font-size: 1.4rem; /* Tamanho do h2 */
+}
+
+h3 {
+    font-size: 1.2rem; /* Tamanho do h3 */
+}
+
+p {
+    text-indent: 1em; /* Indentação dos parágrafos */
+}
+
+.resumo {
+    text-align: right; /* Alinhamento à direita para a seção de resumo */
+}
+
+.principal p {
+    line-height: 1.5; /* Espaçamento entre as linhas para a seção principal */
+}
+
+abbr {
+    font-variant: small-caps; /* Abreviaturas em small-caps */
 }
 
 a {
@@ -29,7 +57,7 @@ a:hover {
 
 button {
     background-color: var(--cor-destaque);
-    color: var(--cor-fundo);
+    color: var(--cor-fundo-primaria);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -45,7 +73,7 @@ button:hover {
     background-color: var(--cor-destaque);
     padding: 5px;
     border-radius: 3px;
-    color: var(--cor-fundo);
+    color: var(--cor-fundo-primaria);
 }
 
 .container {
