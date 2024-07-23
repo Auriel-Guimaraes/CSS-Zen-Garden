@@ -2,32 +2,87 @@
     --cor-fundo-primaria: #f5f5f5; /* Bege claro */
     --cor-fonte: #4a4a4a; /* Cinza escuro */
     --cor-destaque: #d28a7c; /* Coral suave */
+    --cor-fundo-escuro: #333; /* Fundo escuro para cabeçalho e rodapé */
+    --cor-fonte-clara: #f5f5f5; /* Fonte clara para contraste */
 }
 
 body {
-    width: 1000px; /* Tamanho fixo da página */
-    margin: 0 auto;
+    width: 80%;
+    max-width: 1280px; /* Largura máxima da página */
+    margin: 0 auto; /* Centralizar a página */
     background-color: var(--cor-fundo-primaria);
     color: var(--cor-fonte);
     font-family: sans-serif; /* Fonte do tipo sans-serif */
     line-height: 1.6;
 }
 
+.introducao {
+    height: 550px; /* Altura da seção de introdução */
+}
+
+#design-archives {
+    display: none; /* Remover o container da renderização */
+}
+
+header {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-fonte-clara);
+    padding: 20px;
+    display: flex; /* Display flex para alinhar lado a lado */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+header h1 {
+    margin-right: 1em; /* Espaçamento lateral para o título principal */
+    font-size: 2rem; /* Tamanho do título principal */
+}
+
+header h2 {
+    font-size: 1.5rem; /* Tamanho do subtítulo */
+}
+
 h1, h2, h3 {
-    text-align: center; /* Alinhamento central para todos os títulos */
-    color: var(--cor-destaque); /* Cor dos títulos usando cor de destaque */
+    color: var(--cor-destaque); /* Cor coral suave para títulos fora do cabeçalho */
+    text-align: center; /* Centralização de títulos */
 }
 
-h1 {
-    font-size: 1.8rem; /* Tamanho do h1 */
+nav ul {
+    list-style-type: none; /* Remover bullets dos itens do menu */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centralizar os itens do menu */
 }
 
-h2 {
-    font-size: 1.4rem; /* Tamanho do h2 */
+nav ul li {
+    margin-bottom: 1em; /* Espaçamento entre itens do menu */
 }
 
-h3 {
-    font-size: 1.2rem; /* Tamanho do h3 */
+footer {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-fonte-clara);
+    padding: 20px;
+    text-align: center;
+    margin: 4% 0; /* Espaçamento externo no rodapé */
+}
+
+footer a {
+    display: inline-block;
+    color: var(--cor-fonte-clara);
+    border: 2px solid var(--cor-fonte-clara);
+    padding: 0.5em;
+    text-decoration: none;
+    margin: 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+    background-color: var(--cor-fonte-clara);
+    color: var(--cor-fundo-escuro);
 }
 
 p {
@@ -44,44 +99,4 @@ p {
 
 abbr {
     font-variant: small-caps; /* Abreviaturas em small-caps */
-}
-
-a {
-    color: var(--cor-destaque);
-    text-decoration: none;
-}
-
-a:hover {
-    color: #b06b60; /* Um tom de coral mais escuro */
-}
-
-button {
-    background-color: var(--cor-destaque);
-    color: var(--cor-fundo-primaria);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #b06b60; /* Tom mais escuro para hover */
-}
-
-.highlight {
-    background-color: var(--cor-destaque);
-    padding: 5px;
-    border-radius: 3px;
-    color: var(--cor-fundo-primaria);
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
