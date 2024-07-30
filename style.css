@@ -4,6 +4,7 @@
     --cor-destaque: #d28a7c; /* Coral suave */
     --cor-fundo-escuro: #333; /* Fundo escuro para cabeçalho e rodapé */
     --cor-fonte-clara: #f5f5f5; /* Fonte clara para contraste */
+    --cor-borda: #1f295c; /* Cor da borda da explicação */
 }
 
 body {
@@ -14,6 +15,10 @@ body {
     color: var(--cor-fonte);
     font-family: sans-serif; /* Fonte do tipo sans-serif */
     line-height: 1.6;
+}
+
+.page-wrapper {
+    position: relative; /* Define o elemento como referência para posicionamento */
 }
 
 .introducao {
@@ -51,6 +56,14 @@ h1, h2, h3 {
     text-align: center; /* Centralização de títulos */
 }
 
+.explanation {
+    width: 60%; /* Ocupar 60% da largura disponível */
+    margin-right: 35%; /* Espaçamento à direita de 35% */
+    border-right: 1px solid var(--cor-borda); /* Borda à direita */
+    padding-right: 2%; /* Espaçamento interno à direita de 2% */
+    box-sizing: border-box; /* Incluir borda e padding no tamanho total */
+}
+
 nav ul {
     list-style-type: none; /* Remover bullets dos itens do menu */
     padding: 0;
@@ -60,6 +73,14 @@ nav ul {
 
 nav ul li {
     margin-bottom: 1em; /* Espaçamento entre itens do menu */
+}
+
+.design-selection {
+    position: absolute; /* Posicionamento absoluto */
+    top: 360px; /* Iniciar na parte superior após introdução */
+    left: 62%; /* Iniciar após o elemento .explanation */
+    padding: 2%; /* Espaçamento interno horizontal de 2% */
+    box-sizing: border-box; /* Incluir padding no tamanho total */
 }
 
 footer {
