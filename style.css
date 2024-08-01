@@ -77,7 +77,7 @@ nav ul li {
 
 .design-selection {
     position: absolute; /* Posicionamento absoluto */
-    top: 360px; /* Iniciar na parte superior após introdução */
+    top: 330px; /* Iniciar na parte superior após introdução */
     left: 62%; /* Iniciar após o elemento .explanation */
     padding: 2%; /* Espaçamento interno horizontal de 2% */
     box-sizing: border-box; /* Incluir padding no tamanho total */
@@ -118,6 +118,42 @@ p {
     line-height: 1.5; /* Espaçamento entre as linhas para a seção principal */
 }
 
+.benefits {
+    display: flex;
+    border-top: #1f295c solid 1px;
+    border-bottom: #1f295c solid 1px;
+}
+
+.benefits p {
+    flex-basis: 70%;
+}
+
+.benefits h3 {
+    order: 2;
+    align-self: center;
+    flex-basis: 30%;
+}
+
+.participation {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: #1f295c solid 1px;
+}
+
+.participation p {
+    flex-basis: 50%;
+}
+
+.participation h3 {
+    align-self: center;
+    flex-basis: 50%;
+}
+
 abbr {
     font-variant: small-caps; /* Abreviaturas em small-caps */
+}
+
+.supporting footer {
+    display: flex;
+    justify-content: space-evenly;
 }
