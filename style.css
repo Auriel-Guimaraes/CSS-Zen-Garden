@@ -191,3 +191,55 @@ a:visited {
 .design-selection li:last-child {
     border-bottom: 1px solid var(--cor-borda); /* Borda inferior apenas no último item */
 }
+
+/* Media Query para dispositos móveis*/
+
+@media screen and (max-width: 768px) {
+    .design-selection {
+        position: static; /* Remove o reposicionamento absoluto */
+        padding: 0; /* Remove o espaçamento interno */
+    }
+
+    .explanation {
+        width: 100%; /* Ocupa toda a largura disponível */
+        margin-right: 0; /* Remove a margem direita */
+        border-right: none; /* Remove a borda lateral direita */
+    }
+
+    .benefits, .participation {
+        flex-direction: column; /* Orientação vertical */
+        align-items: flex-start; /* Alinhamento à esquerda */
+    }
+
+    header {
+        display: block; /* Remove o flexbox para o cabeçalho */
+    }
+
+    p {
+        text-indent: 0; /* Remove a indentação de parágrafos */
+    }
+}
+
+/* Media Query para Impressão*/ 
+
+@media print {
+    body {
+        font-family: "Times New Roman", Times, serif; /* Fonte serifada para impressão */
+    }
+
+    header {
+        background-color: var(--cor-fundo-primaria); /* Fundo claro */
+        color: var(--cor-fonte); /* Texto escuro */
+    }
+
+    footer {
+        background-color: var(--cor-fundo-primaria); /* Fundo claro para rodapé */
+        color: var(--cor-fonte); /* Texto escuro */
+    }
+
+    a {
+        color: var(--cor-fonte); /* Links em cor padrão */
+        text-decoration: underline; /* Underline para links */
+        font-weight: normal; /* Remover negrito dos links */
+    }
+}
