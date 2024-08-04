@@ -77,11 +77,12 @@ nav ul li {
 
 .design-selection {
     position: absolute; /* Posicionamento absoluto */
-    top: 330px; /* Iniciar na parte superior após introdução */
+    top: 325px; /* Iniciar na parte superior após introdução */
     left: 62%; /* Iniciar após o elemento .explanation */
     padding: 2%; /* Espaçamento interno horizontal de 2% */
     box-sizing: border-box; /* Incluir padding no tamanho total */
 }
+
 
 footer {
     background-color: var(--cor-fundo-escuro);
@@ -114,9 +115,19 @@ p {
     text-align: right; /* Alinhamento à direita para a seção de resumo */
 }
 
-.principal p {
+.main p {
     line-height: 1.5; /* Espaçamento entre as linhas para a seção principal */
 }
+
+.main p:first-of-type:first-letter {
+    font-size: 3em; /* 3 vezes maior que o padrão */
+    font-family: serif; /* Fonte diferente (serif) */
+    float: left; /* Flutuar à esquerda */
+    margin-right: 0.1em; /* Margem à direita para espaçamento */
+    margin-top: 0.1em; /* Margem no topo para ajuste */
+    line-height: 1; /* Linha individual para a letra */
+}
+
 
 .benefits {
     display: flex;
@@ -156,4 +167,27 @@ abbr {
 .supporting footer {
     display: flex;
     justify-content: space-evenly;
+}
+
+
+a {
+    color:#d28a7c; /* Cor de destaque para links*/
+    font-weight: bold; /* negrito para os links */
+}
+
+a:hover {
+    color:#e9cdc8; /* Tonalidade mais clara */
+}
+
+a:visited {
+    color: #e9cdc8; /* Tonalidade mais clara */
+    font-weight: normal; /* Retira o negrito */
+}
+
+.design-selection li {
+    border-top: 1px solid var(--cor-borda); /* Borda superior em todos os itens */
+}
+
+.design-selection li:last-child {
+    border-bottom: 1px solid var(--cor-borda); /* Borda inferior apenas no último item */
 }
